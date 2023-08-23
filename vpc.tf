@@ -3,7 +3,9 @@ module "network" {
  # version = "7.3.0"
   version = "3.4.0"
   # insert required variables here
-
+ project_id   = var.project
+    network_name = "example-vpc"
+    routing_mode = "GLOBAL"
 
 subnets = [
   {
